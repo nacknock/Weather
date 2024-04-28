@@ -1,0 +1,193 @@
+[25-Apr-2024 06:55:02 UTC] PHP Deprecated:  Non-static method XmlToJson::Parse() should not be called statically in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 35
+[25-Apr-2024 06:57:11 UTC] PHP Notice:  Undefined variable: {"response":{"header":{"resultCode":"00","resultMsg":"NORMAL_SERVICE"},"body":{"dataType":"JSON","items":{"item":[{"baseDate":"20240425","baseTime":"0630","category":"LGT","fcstDate":"20240425","fcstTime":"0700","fcstValue":"0","nx":67,"ny":100},{"baseDate":"20240425","baseTime":"0630","category":"LGT","fcstDate":"20240425","fcstTime":"0800","fcstValue":"0","nx":67,"ny":100},{"baseDate":"20240425","baseTime":"0630","category":"LGT","fcstDate":"20240425","fcstTime":"0900","fcstValue":"0","nx":67,"ny":100},{"baseDate":"20240425","baseTime":"0630","category":"LGT","fcstDate":"20240425","fcstTime":"1000","fcstValue":"0","nx":67,"ny":100},{"baseDate":"20240425","baseTime":"0630","category":"LGT","fcstDate":"20240425","fcstTime":"1100","fcstValue":"0","nx":67,"ny":100},{"baseDate":"20240425","baseTime":"0630","category":"LGT","fcstDate":"20240425","fcstTime":"1200","fcstValue":"0","nx":67,"ny":100},{"baseDate":"20240425","baseTime":"0630","category":"PTY","fcstDate":"20240425","fcstTime":"0700", in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 51
+[25-Apr-2024 06:58:53 UTC] PHP Notice:  Undefined variable: <?xml version="1.0" encoding="UTF-8"?>
+<response><header><resultCode>00</resultCode><resultMsg>NORMAL_SERVICE</resultMsg></header><body><dataType>XML</dataType><items><item><baseDate>20240425</baseDate><baseTime>1430</baseTime><category>LGT</category><fcstDate>20240425</fcstDate><fcstTime>1500</fcstTime><fcstValue>0</fcstValue><nx>67</nx><ny>100</ny></item><item><baseDate>20240425</baseDate><baseTime>1430</baseTime><category>LGT</category><fcstDate>20240425</fcstDate><fcstTime>1600</fcstTime><fcstValue>0</fcstValue><nx>67</nx><ny>100</ny></item><item><baseDate>20240425</baseDate><baseTime>1430</baseTime><category>LGT</category><fcstDate>20240425</fcstDate><fcstTime>1700</fcstTime><fcstValue>0</fcstValue><nx>67</nx><ny>100</ny></item><item><baseDate>20240425</baseDate><baseTime>1430</baseTime><category>LGT</category><fcstDate>20240425</fcstDate><fcstTime>1800</fcstTime><fcstValue>0</fcstValue><nx>67</nx><ny>100</ny></item><item><baseDate>20240425</baseDate><baseTime>1430</baseTime><categor in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 35
+[26-Apr-2024 04:29:10 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php:29
+Stack trace:
+#0 {main}
+  thrown in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 29
+[26-Apr-2024 04:29:51 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php:29
+Stack trace:
+#0 {main}
+  thrown in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 29
+[26-Apr-2024 04:29:55 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php:29
+Stack trace:
+#0 {main}
+  thrown in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 29
+[26-Apr-2024 18:10:56 Asia/Seoul] PHP Warning:  Use of undefined constant n - assumed 'n' (this will throw an Error in a future version of PHP) in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 142
+[26-Apr-2024 18:10:56 Asia/Seoul] PHP Notice:  Undefined index: n in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 142
+[26-Apr-2024 18:10:56 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 142
+[26-Apr-2024 18:10:56 Asia/Seoul] PHP Warning:  Use of undefined constant n - assumed 'n' (this will throw an Error in a future version of PHP) in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 143
+[26-Apr-2024 18:10:56 Asia/Seoul] PHP Notice:  Undefined index: n in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 143
+[26-Apr-2024 18:10:56 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 143
+[26-Apr-2024 18:10:56 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:10:56 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:10:56 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:10:56 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 162
+[26-Apr-2024 18:11:26 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:11:26 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:11:26 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:11:26 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 162
+[26-Apr-2024 18:11:48 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:11:48 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:11:48 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:11:48 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 162
+[26-Apr-2024 18:11:56 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:11:56 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:11:56 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:11:56 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 162
+[26-Apr-2024 18:12:50 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:12:50 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:12:50 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:12:50 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 162
+[26-Apr-2024 18:13:29 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:13:29 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:13:29 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:13:29 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 162
+[26-Apr-2024 18:17:43 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:17:43 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:17:43 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:17:43 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 162
+[26-Apr-2024 18:19:11 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:19:11 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:19:11 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:19:11 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 162
+[26-Apr-2024 18:19:16 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:19:16 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:19:16 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:19:16 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 162
+[26-Apr-2024 18:19:20 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:19:20 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:19:20 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 18:19:20 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 162
+[26-Apr-2024 19:12:03 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:03 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:03 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:03 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:04 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:04 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:04 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:04 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:06 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:06 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:06 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:06 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:06 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:06 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:06 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:06 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:07 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:08 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:08 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:08 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:08 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:09 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:09 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:09 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:09 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:09 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:09 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:09 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:09 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:09 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:09 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:09 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:09 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 19:12:09 Asia/Seoul] PHP Notice:  Undefined index: body in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:09 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:09 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 167
+[26-Apr-2024 19:12:09 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 20:08:02 Asia/Seoul] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 156
+[26-Apr-2024 20:08:08 Asia/Seoul] PHP Notice:  Undefined offset: 1080 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 296
+[26-Apr-2024 20:08:20 Asia/Seoul] PHP Notice:  Undefined offset: 1080 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 296
+[26-Apr-2024 20:48:55 Asia/Seoul] PHP Notice:  Uninitialized string offset: 6 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:48:55 Asia/Seoul] PHP Notice:  Uninitialized string offset: 7 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:48:55 Asia/Seoul] PHP Notice:  Uninitialized string offset: 8 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:48:55 Asia/Seoul] PHP Notice:  Uninitialized string offset: 9 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:48:55 Asia/Seoul] PHP Notice:  Uninitialized string offset: 10 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:48:55 Asia/Seoul] PHP Notice:  Uninitialized string offset: 11 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:48:55 Asia/Seoul] PHP Notice:  Uninitialized string offset: 12 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:48:55 Asia/Seoul] PHP Notice:  Uninitialized string offset: 13 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:48:55 Asia/Seoul] PHP Notice:  Uninitialized string offset: 14 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:48:55 Asia/Seoul] PHP Notice:  Uninitialized string offset: 15 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:48:55 Asia/Seoul] PHP Notice:  Uninitialized string offset: 16 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:48:55 Asia/Seoul] PHP Notice:  Uninitialized string offset: 17 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:49:44 Asia/Seoul] PHP Notice:  Uninitialized string offset: 6 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:49:44 Asia/Seoul] PHP Notice:  Uninitialized string offset: 7 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:49:44 Asia/Seoul] PHP Notice:  Uninitialized string offset: 8 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:49:44 Asia/Seoul] PHP Notice:  Uninitialized string offset: 9 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:49:44 Asia/Seoul] PHP Notice:  Uninitialized string offset: 10 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:49:44 Asia/Seoul] PHP Notice:  Uninitialized string offset: 11 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:49:44 Asia/Seoul] PHP Notice:  Uninitialized string offset: 12 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:49:44 Asia/Seoul] PHP Notice:  Uninitialized string offset: 13 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:49:44 Asia/Seoul] PHP Notice:  Uninitialized string offset: 14 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:49:44 Asia/Seoul] PHP Notice:  Uninitialized string offset: 15 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:49:44 Asia/Seoul] PHP Notice:  Uninitialized string offset: 16 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 20:49:44 Asia/Seoul] PHP Notice:  Uninitialized string offset: 17 in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 310
+[26-Apr-2024 21:10:55 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 21:10:55 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 21:10:55 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 21:10:55 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 21:10:55 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 176
+[26-Apr-2024 21:12:55 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 21:12:55 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 21:12:55 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 21:12:55 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 173
+[26-Apr-2024 21:12:55 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 176
+[28-Apr-2024 09:29:19 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 175
+[28-Apr-2024 09:29:19 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 175
+[28-Apr-2024 09:29:19 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 175
+[28-Apr-2024 09:29:19 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 175
+[28-Apr-2024 09:29:19 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 178
+[28-Apr-2024 09:30:31 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 175
+[28-Apr-2024 09:30:31 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 175
+[28-Apr-2024 09:30:31 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 175
+[28-Apr-2024 09:30:31 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 175
+[28-Apr-2024 09:30:31 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 178
+[28-Apr-2024 09:30:41 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 175
+[28-Apr-2024 09:30:41 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 175
+[28-Apr-2024 09:30:41 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 175
+[28-Apr-2024 09:30:41 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 175
+[28-Apr-2024 09:30:41 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 178
+[28-Apr-2024 09:46:32 Asia/Seoul] PHP Notice:  Undefined variable: queryParams in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 155
+[28-Apr-2024 09:46:32 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 177
+[28-Apr-2024 09:46:32 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 177
+[28-Apr-2024 09:46:32 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 177
+[28-Apr-2024 09:46:32 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 177
+[28-Apr-2024 09:46:32 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 180
+[28-Apr-2024 01:09:24 UTC] PHP Notice:  Undefined variable: response in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 275
