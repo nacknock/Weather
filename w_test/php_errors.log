@@ -191,3 +191,6 @@ Stack trace:
 [28-Apr-2024 09:46:32 Asia/Seoul] PHP Notice:  Trying to access array offset on value of type null in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 177
 [28-Apr-2024 09:46:32 Asia/Seoul] PHP Warning:  Invalid argument supplied for foreach() in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 180
 [28-Apr-2024 01:09:24 UTC] PHP Notice:  Undefined variable: response in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-google.php on line 275
+[01-May-2024 10:37:36 Asia/Seoul] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 169
+[01-May-2024 06:17:20 UTC] PHP Notice:  Undefined variable: city_name in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 290
+[01-May-2024 06:17:20 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 290
