@@ -17,6 +17,8 @@ $now_time = date("H") . '00'; //24시간 기준 현재 시간 hh
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
+
+    <!-- 지도에 띄울 Overlay style -->
     <style>
         .overlay {
         background-color: #4285F4;
@@ -44,8 +46,8 @@ $now_time = date("H") . '00'; //24시간 기준 현재 시간 hh
 </head>
 
 <body>
+    <!-- 지도를 띄울 div -->
     <div id = "map" style="width:500px;height: 500px;"></div>
-    <div id = "test" >test</div>
 <?php
 //var_dump($response);
 ?>
@@ -59,12 +61,14 @@ $now_time = date("H") . '00'; //24시간 기준 현재 시간 hh
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=86f8c996f9887b63b12aa0ccb7f36158"></script>
 
 <script>
+//지도 생성 start//
 const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
 let options = { //지도를 생성할 때 필요한 기본 옵션
 	center: new kakao.maps.LatLng(36.347119, 127.386566), //지도의 중심좌표.
 	level: 13 //지도의 레벨(처음 로드했을때의 확대, 축소 정도)
 };
 let map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+//지도 생성 end//
 
 // 오버레이를 띄우는 function
 function Overlayset(city_name,pty,t1h,map_x,map_y){
@@ -75,8 +79,8 @@ const position = new kakao.maps.LatLng(map_x, map_y);
 // 커스텀 오버레이로 쓸 div 생성
 const content = document.createElement("div");
 
-content.className = "overlay";
-content.innerHTML = city_name + "<br>" + pty + "<br>" + t1h;
+content.className = "overlay"; // 생성된 div 클래스 추가
+content.innerHTML = city_name + "<br>" + pty + "<br>" + t1h; //생성된 div에 도시명,날씨,기온 입력
 
 // 커스텀 오버레이를 생성합니다
 const customOverlay = new kakao.maps.CustomOverlay({
@@ -90,8 +94,8 @@ const customOverlay = new kakao.maps.CustomOverlay({
 customOverlay.setMap(map);
 
 }
-
-let cities_xy = [//기상을 받아올 도시들의 정보(도시명,지도상 좌표xy,기상청 좌표xy)
+//기상을 받아올 도시들의 정보가 들어간 배열(도시명,지도상 좌표xy,기상청 좌표xy)
+let cities_xy = [
     {
         name: '서울',
         map_x: 37.5635694,
@@ -223,6 +227,8 @@ let cities_xy = [//기상을 받아올 도시들의 정보(도시명,지도상 �
     }
 ];
 
+//아래 foreach문 안에서 각 항목 별로 구분해서 담아두기 위한 배열들
+
 let pty = []; //날씨
 
 let t1h = []; //기온
@@ -238,13 +244,13 @@ cities_xy.forEach(function(city) { //각 도시의 기상을 받아와서 지도
 var xhr = new XMLHttpRequest();//기상청 xy값 및 현재 시각을 api에 전송, xhr로 결과 받아옴
 var url = 'http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst'; /*URL*/
 var queryParams = '?' + encodeURIComponent('serviceKey') + '='+'10Ocf349ZEz%2BwQRl9IQ7TMxDOsvtbi%2FCwG5y4uqmHGluMMJutbVLkvYfMvmqvXnIl2Y%2F4tUbQtPowh79hwhwKw%3D%3D'; /*Service Key*/
-queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /*페이지넘버*/
+queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /*페이지 넘버*/
 queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('8'); /*페이지 내 8줄까지의 내용*/
 queryParams += '&' + encodeURIComponent('dataType') + '=' + encodeURIComponent('JSON'); /*받아올 결과값 타입(JSON,XML)*/
-queryParams += '&' + encodeURIComponent('base_date') + '=' + encodeURIComponent(<?= $today ?>); /*php로 구해놓은 오늘 날짜*/
-queryParams += '&' + encodeURIComponent('base_time') + '=' + encodeURIComponent(<?= $oneHourAgo ?>); /*php로 구해놓은 현재 시간 -1시간 정각//*/
-queryParams += '&' + encodeURIComponent('nx') + '=' + encodeURIComponent(city.wth_x); /*기상청 기준 x값*/
-queryParams += '&' + encodeURIComponent('ny') + '=' + encodeURIComponent(city.wth_y); /*기상청 기준 y값*/
+queryParams += '&' + encodeURIComponent('base_date') + '=' + encodeURIComponent(<?= $today ?>); /*yyyymmdd 형식의 날짜*/
+queryParams += '&' + encodeURIComponent('base_time') + '=' + encodeURIComponent(<?= $oneHourAgo ?>); /*hhmm 형식의 시간*/
+queryParams += '&' + encodeURIComponent('nx') + '=' + encodeURIComponent(city.wth_x); /*/*기상청 고유 위치좌표 x값,기상청 api 참고문서 내 도시별 값 존재*/*/
+queryParams += '&' + encodeURIComponent('ny') + '=' + encodeURIComponent(city.wth_y); /*/*기상청 고유 위치좌표 y값,기상청 api 참고문서 내 도시별 값 존재*/*/
 
 //xhr 통신
 xhr.open('GET', url + queryParams);
@@ -255,6 +261,7 @@ xhr.onreadystatechange = function () {
 
         wth_arr.forEach(function(item) { //wth_arr배열
 
+            // T1H, PTY의 obsrValue만 추출하여 출력
             if (item['category'] == 'T1H' || item['category'] == 'PTY') {
                     if(item.category == 'PTY'){
                         if(item.obsrValue == '0'){
@@ -279,6 +286,7 @@ xhr.onreadystatechange = function () {
                             pty.push("눈날림");
                         }
                     }
+                    //기온 및 나머지 값들
                     else if(item.category == 'T1H'){
                         t1h.push(item.obsrValue + "℃");
 
@@ -291,7 +299,7 @@ xhr.onreadystatechange = function () {
               
             }
 
-            for(let num in city_name){ //배열 length만큼 Overlayset 반복
+            for(let num in city_name){ //배열 length만큼 Overlayset function 반복
             Overlayset(city_name[num],pty[num],t1h[num],map_x[num],map_y[num]);
             };
     });

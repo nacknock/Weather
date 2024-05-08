@@ -1,5 +1,5 @@
 <?php
-
+//기상을 받아올 도시들의 정보가 들어간 배열(도시명,지도상 좌표xy,기상청 좌표xy)
 $cities_xy = [
     [
         'name' => '서울',
@@ -132,7 +132,7 @@ $cities_xy = [
     ]
 ];
 
-date_default_timezone_set('Asia/Seoul');
+date_default_timezone_set('Asia/Seoul'); //시간 기준 한국/서울로 바꾸기@@js보다 php가 훨씬 간결해서 php로 구함,js로 구해도 상관없음
 
 $today = date("Ymd"); //날짜 yyyymmdd
 
@@ -140,27 +140,31 @@ $oneHourAgo = date("H", strtotime("-1 hour")) . '00'; //24시간 기준 현재 �
 
 $now_time = date("H") . '00'; //24시간 기준 현재 시간 hh
 
-$city_name = [];
+//아래 foreach문 안에서 각 항목 별로 구분해서 담아두기 위한 배열들
 
-$map_x = [];
+$city_name = []; //도시명
 
-$map_y = [];
+$map_x = []; //지도 x값
 
-$T1H_arr = [];
+$map_y = []; //지도 y값
 
-$SKY_arr = [];
+$T1H_arr = []; //기온
 
+$SKY_arr = []; //날씨
+
+//순서대로 기상을 받아와서 날씨와 기온만 배열에 담기
 foreach($cities_xy as $city){
+    //기상청 api에 요청 보내기(기상청 php 예시 코드 참고)
     $ch = curl_init();
     $url = 'http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtFcst'; /*URL*/
-    $queryParams = '?' . urlencode('serviceKey') . '=10Ocf349ZEz%2BwQRl9IQ7TMxDOsvtbi%2FCwG5y4uqmHGluMMJutbVLkvYfMvmqvXnIl2Y%2F4tUbQtPowh79hwhwKw%3D%3D'; /*Service Key*/
-    $queryParams .= '&' . urlencode('pageNo') . '=' . urlencode('1'); /**/
-    $queryParams .= '&' . urlencode('numOfRows') . '=' . urlencode('1000'); /**/
-    $queryParams .= '&' . urlencode('dataType') . '=' . urlencode('JSON'); /**/
-    $queryParams .= '&' . urlencode('base_date') . '=' . urlencode($today); /**/
-    $queryParams .= '&' . urlencode('base_time') . '=' . urlencode($oneHourAgo); /**/
-    $queryParams .= '&' . urlencode('nx') . '=' . urlencode($city['wth_x']); /**/
-    $queryParams .= '&' . urlencode('ny') . '=' . urlencode($city['wth_y']); /**/
+    $queryParams = '?' . urlencode('serviceKey') . '=' . 'Your Service Key'; /*Service Key*/
+    $queryParams .= '&' . urlencode('pageNo') . '=' . urlencode('1'); /*페이지 넘버*/
+    $queryParams .= '&' . urlencode('numOfRows') . '=' . urlencode('1000'); /*1페이지 내 1000줄까지의 내용*/
+    $queryParams .= '&' . urlencode('dataType') . '=' . urlencode('JSON'); /*받아올 결과값 타입(JSON,XML)*/
+    $queryParams .= '&' . urlencode('base_date') . '=' . urlencode($today); /*yyyymmdd 형식의 날짜*/
+    $queryParams .= '&' . urlencode('base_time') . '=' . urlencode($oneHourAgo); /*hhmm 형식의 시간*/
+    $queryParams .= '&' . urlencode('nx') . '=' . urlencode($city['wth_x']); /*기상청 고유 위치좌표 x값,기상청 api 참고문서 내 도시별 값 존재*/
+    $queryParams .= '&' . urlencode('ny') . '=' . urlencode($city['wth_y']); /*기상청 고유 위치좌표 y값,기상청 api 참고문서 내 도시별 값 존재*/
 
     curl_setopt($ch, CURLOPT_URL, $url . $queryParams);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
@@ -175,11 +179,10 @@ foreach($cities_xy as $city){
     // 'item' 배열 추출
     $items = $WeatherArray['response']['body']['items']['item'];
 
-    // LGT와 PTY의 fcstValue만 추출하여 출력
+    // SKY와 T1H, PTY의 fcstValue만 추출하여 출력
     foreach ($items as $item) {
             if ($item['category'] == 'SKY' || $item['category'] == 'T1H' || $item['category'] == 'PTY') {
                 if($item['fcstTime'] == $now_time){
-                    // echo "Category: " . $item['category'] . " - fcstValue: " . $item['fcstValue'] . "\n";
                     if($item['category'] == 'PTY'){
                         if($item['fcstValue'] == '0'){ //강수 형태 없을때
                             foreach ($items as $item) {
@@ -197,7 +200,7 @@ foreach($cities_xy as $city){
                                     }
                                 }
                             }
-                        }
+                        } //강수 형태 있을때
                         else if($item['fcstValue'] == '1'){
                             $SKY_arr[] = "비";
                         }
@@ -217,6 +220,7 @@ foreach($cities_xy as $city){
                             $SKY_arr[] = "눈날림";
                         }
                     }
+                    //기온 및 나머지 값들
                     else if($item['category'] == 'T1H'){
                         $T1H_arr[] = $item['fcstValue'] . "℃";
 
@@ -241,8 +245,10 @@ foreach($cities_xy as $city){
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
+
+    <!-- 지도에 띄울 Overlay style -->
     <style>
-        .overlay {
+        .price-tag {
         background-color: #4285F4;
         border-radius: 8px;
         color: #FFFFFF;
@@ -251,7 +257,7 @@ foreach($cities_xy as $city){
         position: relative;
         }
 
-        .overlay::after {
+        .price-tag::after {
         content: "";
         position: absolute;
         left: 50%;
@@ -268,52 +274,78 @@ foreach($cities_xy as $city){
 </head>
 
 <body>
+    <!-- 지도를 띄울 div -->
     <div id = "map" style="width:500px;height: 500px;"></div>
-    <div id = "test" >test</div>
 <?php
-//var_dump($response);
+//기상청 api에서 받아온 값 전체
+var_dump($response);
 ?>
-    
+
+
+    <!-- google map api -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSkObXYqq7ZjLJSuK47D5XBi7NKKm5ojM&callback=initMap"></script>
 
 </body>
-<!-- jquery 3.3.1 -->
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=86f8c996f9887b63b12aa0ccb7f36158"></script>
 <script>
-const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-let options = { //지도를 생성할 때 필요한 기본 옵션
-	center: new kakao.maps.LatLng(36.347119, 127.386566), //지도의 중심좌표.
-	level: 13 //지도의 레벨(확대, 축소 정도)
-};
-let map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        //지도 생성 start//
+        let map;
 
+        window.initMap = () => {
+            map = new google.maps.Map(document.getElementById("map"), { //지도 띄울 요소 지정
+                center: new google.maps.LatLng( 36.347119, 127.386566 ), //지도 시작점 좌표 설정
+                zoom: 7, //지도 시작 사이즈 설정
+            });
+        //지도 생성 end//
 <?php
 for($i = 0;$i<=count($city_name)-1;$i++){
 
-    echo 'Overlayset("' . $city_name[$i] . '","' . $SKY_arr[$i] . '","' . $T1H_arr[$i] . '",' . $map_x[$i] . ',' . $map_y[$i] . ');';
+    echo 'Overlayset("' . $city_name[$i] . '","' . $SKY_arr[$i] . '","' . $T1H_arr[$i] . '",' . $map_x[$i] . ',' . $map_y[$i] . ',' . $i . ');';
 
 }
 ?>
+        }
 
-function Overlayset(city_name,sky,t1h,map_x,map_y){
-// 커스텀 오버레이가 표시될 위치입니다 
-const position = new kakao.maps.LatLng(map_x, map_y);  
+        function Overlayset(city_name,sky,t1h,map_x,map_y,i){
+            const priceTag = document.createElement("div");
 
-// 커스텀 오버레이로 쓸 div 생성
-const content = document.createElement("div");
+            priceTag.className = "price-tag";
+            priceTag.innerHTML = city_name + "<br>" + sky + "<br>" + t1h;
 
-content.className = "overlay";
-content.innerHTML = city_name + "<br>" + sky + "<br>" + t1h;
+            float_x = +map_x;
 
-// 커스텀 오버레이를 생성합니다
-const customOverlay = new kakao.maps.CustomOverlay({
-    position: position,
-    content: content,
-    xAnchor: 0.3,
-    yAnchor: 0.91
-});
+            float_y = +map_y;
 
-// 커스텀 오버레이를 지도에 표시합니다
-customOverlay.setMap(map);
-}
+            new CustomOverlay(new google.maps.LatLng(float_x,float_y), priceTag, map);
+            
+        }
+
+        function CustomOverlay(position, content, map) {
+            this.position = position;
+            this.content = content;
+            this.map = map;
+
+            this.overlay = new google.maps.OverlayView();
+            this.overlay.onAdd = function() {
+                const div = document.createElement('div');
+                div.style.position = 'absolute';
+                div.appendChild(content);
+                this.getPanes().overlayLayer.appendChild(div);
+            };
+
+            this.overlay.draw = function() {
+                const projection = this.getProjection();
+                const point = projection.fromLatLngToDivPixel(position);
+
+                const div = this.getPanes().overlayLayer.firstChild;
+                div.style.left = point.x + 'px';
+                div.style.top = point.y + 'px';
+            };
+
+            this.overlay.setMap(map);
+        }
+
+        
+
+
 </script>
 </html>
