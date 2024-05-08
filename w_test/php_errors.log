@@ -194,3 +194,43 @@ Stack trace:
 [01-May-2024 10:37:36 Asia/Seoul] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 169
 [01-May-2024 06:17:20 UTC] PHP Notice:  Undefined variable: city_name in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 290
 [01-May-2024 06:17:20 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 290
+[02-May-2024 15:03:09 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:09 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:10 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:10 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:10 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:10 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:10 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:10 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:10 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:10 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:10 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:10 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:10 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:10 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:10 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:10 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:11 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:11 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:11 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:11 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:12 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:12 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:12 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:12 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:12 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:12 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:12 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:12 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:13 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:13 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:13 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:13 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:14 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:14 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:14 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[02-May-2024 15:03:14 Asia/Seoul] PHP Notice:  Undefined index: fcstTime in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 181
+[04-May-2024 06:25:45 UTC] PHP Parse error:  syntax error, unexpected '}' in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 81
+[04-May-2024 15:26:22 Asia/Seoul] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\speed-test.php on line 169
+[08-May-2024 00:54:10 UTC] PHP Notice:  Undefined variable: city_name in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 143
+[08-May-2024 00:54:10 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Apache24\httpd-2.4.46-win64-VS16\Apache24\htdocs\weather\w_test\map-kakao.php on line 143
