@@ -58,7 +58,7 @@ $now_time = date("H") . '00'; //24시간 기준 현재 시간 hh
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!-- 비동기 통신을 위한 jquery -->
 
 <!-- kakao map -->
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=86f8c996f9887b63b12aa0ccb7f36158"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=Your Key"></script>
 
 <script>
 //지도 생성 start//
@@ -243,7 +243,7 @@ cities_xy.forEach(function(city) { //각 도시의 기상을 받아와서 지도
 
 var xhr = new XMLHttpRequest();//기상청 xy값 및 현재 시각을 api에 전송, xhr로 결과 받아옴
 var url = 'http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst'; /*URL*/
-var queryParams = '?' + encodeURIComponent('serviceKey') + '='+'10Ocf349ZEz%2BwQRl9IQ7TMxDOsvtbi%2FCwG5y4uqmHGluMMJutbVLkvYfMvmqvXnIl2Y%2F4tUbQtPowh79hwhwKw%3D%3D'; /*Service Key*/
+var queryParams = '?' + encodeURIComponent('serviceKey') + '='+'Your Service Key'; /*Service Key*/
 queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /*페이지 넘버*/
 queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('8'); /*페이지 내 8줄까지의 내용*/
 queryParams += '&' + encodeURIComponent('dataType') + '=' + encodeURIComponent('JSON'); /*받아올 결과값 타입(JSON,XML)*/

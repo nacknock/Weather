@@ -283,7 +283,7 @@ var_dump($response);
 
 
     <!-- google map api -->
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSkObXYqq7ZjLJSuK47D5XBi7NKKm5ojM&callback=initMap"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=Your_Key&callback=initMap"></script>
 
 </body>
 <script>

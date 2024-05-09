@@ -283,7 +283,7 @@ foreach($cities_xy as $city){
 
 </body>
 <!-- kakao map api -->
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=86f8c996f9887b63b12aa0ccb7f36158"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=your key"></script>
 
 
 <script>
